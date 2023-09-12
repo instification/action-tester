@@ -10,5 +10,7 @@ jobs:
     steps:
       - name: "Clear tags"
         id: clear
-        uses: instification/clear-pr-tags@test-v4
+        uses: instification/clear-pr-tags@test-v5
+        with:
+          GITHUB_TOKEN: ${ secrets.GITHUB_TOKEN }
 
