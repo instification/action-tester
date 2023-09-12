@@ -1,0 +1,14 @@
+name: "Clear PR Tags"
+on:
+  pull_request:
+    types:
+      - closed
+jobs:
+  if_merged:
+    if: github.event.pull_request.merged == true
+    runs-on: ubuntu-latest
+    steps:
+      - name: "Clear tags"
+        id: clear
+        uses: instification/clear-pr-tags@test
+
