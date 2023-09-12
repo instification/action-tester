@@ -10,5 +10,5 @@ jobs:
     steps:
       - name: "Clear tags"
         id: clear
-        uses: instification/clear-pr-tags@test
+        uses: instification/clear-pr-tags@test-v2
 
